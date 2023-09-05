@@ -1,0 +1,15 @@
+// echo "# api_2616472" >> README.md
+// git init
+// git add README.md
+// git commit -m "first commit"
+// git branch -M main
+// git remote add origin https://github.com/Diegoapl17/api_2616472.git
+// git push -u origin main
+
+git init 
+git commit -m "primer commit"
+git config user.email "perezlopezdiego037@gmail.com"
+git config user.name "dapl1"
+git branch -M main
+git remote add origin https://github.com/Diegoapl17/api_2616472.git
+git push -u origin main
