@@ -20,3 +20,4 @@ para actualizar
 
 git add .
 git commit -m "actualizacion del package.json"
+git push -u origin master
