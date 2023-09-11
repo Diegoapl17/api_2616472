@@ -1,21 +1,22 @@
 const {response} = require('express');
+const productos = require('../models/productos');
 
 //importacion de los metodos 
-const Usuario = require('../models/usuarios');
+const Usuario = require('../models/productos');
 
 
 //metodo GET de la api
 //consultar para obtener los usuarios en una variable de tipo asincrona 
-const usuarioGet  = async (req, res) => {
+const productoGet  = async (req, res) => {
     // const {nombre} = req.query//desecstructuracion
 
   
     //consultar todos los uduarios
-    const usuarios = await Usuario.find(); //esto nos da una respuesta
+    const productos = await Producto.find(); //esto nos da una respuesta
 
     //convierte los usuarios en json 
     res.json({
-        usuarios
+        productos
     })
 }
 

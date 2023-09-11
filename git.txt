@@ -21,3 +21,8 @@ para actualizar
 git add .
 git commit -m "actualizacion del package.json"
 git push -u origin master
+
+
+//----------------------------------------------------------------
+cuando hago actualizaciones en la nube 
+git pull  

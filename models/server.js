@@ -8,7 +8,7 @@ class Server{
     constructor(){
         this.app = express()
         this.port = process.env.PORT //capturando variables
-        this.usuarioPath = '/api/usuario' //Ruta Pública esta es la ruta que el usuari ve en el navegador
+        this.productoPath = '/api/producto' //Ruta Pública esta es la ruta que el usuari ve en el navegador
         this.conectarDB()
         this.routes()
     }
@@ -20,7 +20,7 @@ class Server{
     }
 
     routes() {
-        this.app.use(this.usuarioPath, require('../routes/usuario'))
+        this.app.use(this.productoPath, require('../routes/producto'))
     }
 
     async conectarDB(){

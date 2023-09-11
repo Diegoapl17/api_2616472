@@ -3,9 +3,9 @@ const {Router} = require('express')//desecstructuracion extraer un atributo de u
 const route = Router()
 
 //importar metodos del controlador
-const {usuarioGet, usuarioPost, usuarioPut, usuarioDelete} = require('../controllers/usuario')
+const {productoGet, usuarioPost, usuarioPut, usuarioDelete} = require('../controllers/producto')
 
-route.get('/', usuarioGet) //este metodo para listar datos
+route.get('/', productoGet) //este metodo para listar datos
 route.post('/', usuarioPost) //en si hacemos un envio y al final este metodo para insertar datos verificar el metodo
 route.put('/', usuarioPut)
 route.delete('/', usuarioDelete)
